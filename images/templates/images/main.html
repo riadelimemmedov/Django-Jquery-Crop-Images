@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- !Alert Show -->
+<div id="alert-box">
+
+</div>
+
+
+<!-- !Show Image-->
+<div id="image-box" class="mb-3 mt-2">
+    
+</div>   
+
+
+
+<!-- !Upload Image Form -->
+<form action="" id="image-form" class="form-group mt-2">
+    {% csrf_token %}
+    {{form.as_p}}
+</form>
+<button class="btn btn-primary mt-3 d-none" type="submit"id="confirm-btn">Confirm</button>
+
+
+{% endblock content %}
